@@ -55,8 +55,8 @@ end
 
 if __FILE__ == $0
   File.open(DUTY_LIST, 'w') do |f|
-   create_duty(select_duty_members).each do |duty|
-     f.puts duty.join(',')
-   end
+    create_duty(select_duty_members).each do |duty|
+      f.puts duty.join(',')
+    end
   end
 end
